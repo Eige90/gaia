@@ -11,8 +11,6 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
@@ -69,18 +67,16 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `Hello World, my name is Daniel.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a Bavarian based <strong className="text-stone-100">DevOps engineer</strong>, currently trying to get my step in the IT world.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time time, you can catch me training in <strong className="text-stone-100">Gym</strong>,
+        <strong className="text-stone-100"> painting</strong>, playing my <strong className='text-stone-100'>guitar</strong>, or exploring {' '}
+        <strong className="text-stone-100">beautiful places around the world</strong>.
       </p>
     </>
   ),
@@ -104,16 +100,13 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I am a DevOps engineer specializing in cloud infrastructure, automation, and CI/CD pipelines. I enjoy working with Docker, Jenkins, Ansible, and Terraform. In my free time, I like playing soccer, reading books, and listening to music.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Regen, Germany', Icon: MapIcon},
+    {label: 'Age', text: '34', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Austrian living in Germany', Icon: FlagIcon},
+    {label: 'Interests', text: 'Soccer, Books, Music', Icon: SparklesIcon},
+    {label: 'Study', text: 'Technische Hochschule Mittelhessen in Giessen', Icon: AcademicCapIcon},
   ],
 };
 
@@ -125,16 +118,16 @@ export const skills: SkillGroup[] = [
     name: 'Spoken languages',
     skills: [
       {
-        name: 'English',
+        name: 'German',
         level: 10,
       },
       {
-        name: 'French',
-        level: 4,
+        name: 'English',
+        level: 7,
       },
       {
         name: 'Spanish',
-        level: 3,
+        level: 4,
       },
     ],
   },
@@ -143,15 +136,15 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'React',
-        level: 9,
+        level: 6,
       },
       {
-        name: 'Typescript',
+        name: 'Bootstrap',
         level: 7,
       },
       {
-        name: 'GraphQL',
-        level: 6,
+        name: 'Next.js',
+        level: 7,
       },
     ],
   },
@@ -160,11 +153,11 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'Node.js',
-        level: 8,
+        level: 7,
       },
       {
-        name: 'Rust',
-        level: 5,
+        name: 'Rustr',
+        level: 7,
       },
       {
         name: 'Golang',
@@ -173,19 +166,19 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Programming languages',
     skills: [
       {
-        name: 'React Native',
-        level: 9,
+        name: 'Python',
+        level: 8,
       },
       {
-        name: 'Flutter',
-        level: 4,
+        name: 'C++',
+        level: 7,
       },
       {
-        name: 'Swift',
-        level: 3,
+        name: 'Javascript',
+        level: 6,
       },
     ],
   },
@@ -196,37 +189,37 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
+    title: 'Calculator App',
+    description: "This project is a web-based calculator application designed to perform basic arithmetic operations such as addition, subtraction, multiplication, and division. The application features a user-friendly interface, responsive design, and is built using modern web technologies like React and JavaScript. It aims to provide a seamless and efficient user experience for quick and accurate calculations.",
     url: 'https://reactresume.com',
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
+    title: 'Recipe Book',
+    description: "This project is a web-based recipe book application that allows users to browse, search, and save their favorite recipes. The application features a clean and intuitive interface, making it easy to find recipes by category, ingredients, or cuisine. Built with modern web technologies like React and Node.js, it offers a seamless user experience for cooking enthusiasts and home chefs alike.",
     url: 'https://reactresume.com',
     image: porfolioImage2,
   },
   {
-    title: 'Project title 3',
+    title: 'Watch Analog',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
     image: porfolioImage3,
   },
   {
-    title: 'Project title 4',
+    title: 'Watch Digital',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
     image: porfolioImage4,
   },
   {
-    title: 'Project title 5',
+    title: 'Web Scraping',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
     image: porfolioImage5,
   },
   {
-    title: 'Project title 6',
+    title: 'Google Maps',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
     image: porfolioImage6,
@@ -268,39 +261,51 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'July 2023',
+    location: 'Techstarter GmbH',
+    title: 'AWS Certified Cloud Practioner',
+    content: <p></p>,
   },
+
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'March 2024',
+    location: 'Techstarter GmbH',
+    title: 'Professional Scrum Master I',
+    content: (
+      <p></p>
+    ),
   },
+
+  {
+    date: 'April 2024',
+    location: 'Techstarter GmbH',
+    title: 'Linux Essentials- LPIC-101',
+    content: (
+      <p>
+      </p>
+    ),
+  }
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'May 2023 - May 2024',
+    location: 'Techstarter GmbH',
+    title: 'DevOps & Cloud Engineer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Completed a comprehensive 12-month training program focused on DevOps and cloud engineering. Gained hands-on experience with cloud platforms such as AWS, and developed skills in automation, CI/CD pipelines, and infrastructure as code using tools like Docker, Jenkins, Ansible and Terraform. Worked on various projects that involved setting up and managing cloud infrastructure, automating deployment processes, and improving system reliability and scalability.
       </p>
     ),
   },
+
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'September 2006 - December 2022',
+    location: 'Various companies',
+    title: 'Production technician & Mechanical engineer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+            Worked in various roles as a production technician and mechanical engineer, focusing on the optimization of manufacturing processes and machinery maintenance. Led several projects aimed at improving production efficiency and reducing downtime. Utilized technologies such as CAD software for designing mechanical components, and implemented automation solutions to streamline production workflows. Notable achievements include the successful implementation of a predictive maintenance system and the redesign of a key production line that resulted in a 20% increase in output.
       </p>
     ),
   },
@@ -313,18 +318,18 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
+      name: 'Mirjam S.',
+      text: "Working with Daniel has been an absolute pleasure. His expertise in DevOps and cloud infrastructure is unparalleled. He consistently delivers high-quality solutions and is always willing to go the extra mile to ensure project success. Daniel's ability to automate processes and streamline workflows has significantly improved our team's efficiency. I highly recommend him for any DevOps-related projects.",
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
+      name: 'Michaela M.',
+      text: "During his internship at our pharmacy, Daniel demonstrated exceptional IT skills and professionalism. He efficiently managed our IT infrastructure, ensuring all systems were running smoothly and securely. Daniel's proactive approach and problem-solving abilities greatly benefited our team of six. His contributions were invaluable, and I highly recommend him for any IT-related role.",
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
     },
     {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
+      name: 'Adrian R.',
+  text: "Daniel played a crucial role in migrating our website to the cloud, ensuring a seamless transition with minimal downtime. His expertise in cloud infrastructure and DevOps practices was evident throughout the project. Additionally, Daniel's proficiency with GitHub significantly improved our version control and collaboration processes. His dedication and technical skills make him an invaluable asset to any team.",
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
     },
   ],
@@ -336,27 +341,27 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: "Feel free to reach out to me for any DevOps-related inquiries or collaboration opportunities.",
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'eigner.daniel90@gmail.com',
+      href: 'mailto:eigner.daniel90@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Regen, Germany',
+      href: 'https://www.google.de/maps/place/94209+Regen/@48.9675379,12.965128,11z/data=!3m1!4b1!4m6!3m5!1s0x477522c238c1ee2b:0x41d25a40937c570!8m2!3d48.9696953!4d13.1267534!16zL20vMDdsdjIz?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D',
     },
     {
       type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: '@kinged1801',
+      href: 'https://www.instagram.com/kinged1801/',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: '@Eige90',
+      href: 'https://github.com/Eige90',
     },
   ],
 };
@@ -365,9 +370,7 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/Eige90'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/eignerdaniel/'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/kinged1801/'},
 ];
