@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    overflow: hidden; /* Verhindert Scrollen */
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Video hinter dem Inhalt platzieren */
+    transform: translate(-50%, -50%);
+    background: no-repeat; /* Keine Hintergrundwiederholung */
+    background-size: cover; /* Video als Hintergrund anpassen */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, rgba(240, 244, 255, 0.8), rgba(255, 255, 255, 0.8)); /* Transparenter Hintergrund */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Leicht transparent für Lesbarkeit */
+}
+
+/* Dein Video als Hintergrundvideo */
+.background-video {
+    content: url('/854228-hd_1920_1080_30fps.mp4'); /* Datei-Pfad zum Video */
+    autoplay: true;
+    loop: true;
+    muted: true;
+    playsinline: true;
+}
+
+/* Alle anderen CSS-Stile bleiben unverändert */

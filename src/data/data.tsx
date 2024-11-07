@@ -207,13 +207,13 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Recipe Book',
     description: "This project is a web-based recipe book application that allows users to browse, search, and save their favorite recipes. The application features a clean and intuitive interface, making it easy to find recipes by category, ingredients, or cuisine. Built with modern web technologies like React and Node.js, it offers a seamless user experience for cooking enthusiasts and home chefs alike.",
-    url:    <a href="RecipeBook.html"></a>,
+    url:    "RecipeBook.html",
     image: porfolioImage2,
   },
   {
     title: 'Watch Analog',
     description: 'Give a short description of your project here.',
-    url: <a href="WatchAnalog.html"></a>,
+    url: "WatchAnalog.html",
     image: porfolioImage3,
   },
   {
@@ -225,7 +225,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Web Scraping',
     description: 'Give a short description of your project here.',
-    url: <a href="WebScraping.html"></a>,
+    url: "WebScraping.html",
     image: porfolioImage5,
   },
   {
