@@ -156,13 +156,18 @@ export const skills: SkillGroup[] = [
         level: 7,
       },
       {
-        name: 'Rustr',
+        name: 'Github Actions',
         level: 7,
       },
       {
-        name: 'Golang',
-        level: 4,
+        name: 'Terrafom',
+        level: 6,
       },
+      {
+        name: 'Ansible',
+        level: 5,
+      },
+      
     ],
   },
   {
@@ -180,6 +185,11 @@ export const skills: SkillGroup[] = [
         name: 'Javascript',
         level: 6,
       },
+      {
+        name: 'YAML',
+        level: 4,
+      },
+      
     ],
   },
 ];
