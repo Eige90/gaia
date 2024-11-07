@@ -201,7 +201,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Calculator App',
     description: "This project is a web-based calculator application designed to perform basic arithmetic operations such as addition, subtraction, multiplication, and division. The application features a user-friendly interface, responsive design, and is built using modern web technologies like React and JavaScript. It aims to provide a seamless and efficient user experience for quick and accurate calculations.",
-    url:    <a href="Calculator.html"></a>,
+    url:    "Calculator.html",
     image: porfolioImage1,
   },
   {
@@ -219,7 +219,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Watch Digital',
     description: 'Give a short description of your project here.',
-    url: <a href="WatchDigital.html"></a>,
+    url: 'WatchDigital.html',
     image: porfolioImage4,
   },
   {
