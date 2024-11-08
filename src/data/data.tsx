@@ -82,8 +82,8 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
-      text: 'Resume',
+      href: 'CV Daniel Eigner 04.24.pdf',
+      text: 'Curriculum Vitae',
       primary: true,
       Icon: ArrowDownTrayIcon,
     },
